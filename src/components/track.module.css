@@ -1,0 +1,49 @@
+.rectangleIcon {
+  height: 69px;
+  width: 276px;
+  position: relative;
+  display: none;
+}
+.albumCoverIcon {
+  height: 54px;
+  width: 55px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.dripTooHard {
+  margin: 0;
+}
+.lilBabyGunna {
+  margin: 0;
+  color: var(--color-darkgray);
+}
+.titleAndArtistContainer {
+  height: 48px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.track1 {
+  background-color: var(--color-darkslategray);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-7xs) var(--padding-6xs)
+    var(--padding-5xs);
+  gap: var(--gap-mini);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-heebo);
+}
+@media screen and (max-width: 450px) {
+  .titleAndArtistContainer {
+    font-size: var(--font-size-base);
+  }
+}
+.link {
+  color: inherit; /* Use the default text color */
+  text-decoration: none; /* Remove underline */
+}

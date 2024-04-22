@@ -1,0 +1,41 @@
+.rectangle {
+  width: 207px;
+  height: 255px;
+  position: relative;
+  background-color: var(--color-darkslategray);
+  display: none;
+}
+.artistImageIcon {
+  width: 185px;
+  height: 182px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.lilBaby {
+  margin: 0;
+}
+.artistName {
+  width: 146px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.artist1 {
+  background-color: var(--color-darkslategray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-2xs) var(--padding-mini);
+  gap: var(--gap-mid);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-heebo);
+}
+@media screen and (max-width: 450px) {
+  .artistName {
+    font-size: var(--font-size-base);
+  }
+}

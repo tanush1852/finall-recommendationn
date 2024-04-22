@@ -1,0 +1,338 @@
+.artistTitle {
+  margin: 0;
+  width: 855px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.artist1Parent,
+.artistTitleParent {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  
+}
+.artist1Parent {
+  display: grid;
+  flex-direction: row;
+  gap: var(--gap-50xl);
+  grid-template-columns: repeat(4, minmax(155px, 1fr));
+}
+.artistTitleParent {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 100%;
+}
+.tracksTitle {
+  margin: 0;
+  width: 955px;
+  height: 40px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.track1Parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+ 
+  
+}
+.tracksTitleParent {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 0 17px;
+  box-sizing: border-box;
+  gap: 29px;
+  max-width: 100%;
+}
+.frameParent,
+.track4Parent,
+.tracksContainer,
+.tracksTitleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.track4Parent {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 61px 101.5px;
+  min-height: 199px;
+}
+.frameParent,
+.tracksContainer {
+  flex-direction: column;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  gap: 44px;
+}
+.tracksContainer {
+  width: 1035px;
+  flex-shrink: 0;
+  padding: var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+}
+.rectangleLayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-darkslategray);
+}
+.albumCoverIcon {
+  align-self: stretch;
+  height: 431px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.dripTooHard {
+  margin: 0;
+}
+.lilBabyGunna {
+  margin: 0;
+  color: var(--color-darkgray);
+}
+.titleAndArtistContainer {
+  height: 48px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.titleAndArtistWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 23px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.genreTrap,
+.length225,
+.released12,
+.spotifyUrl {
+  margin: 0;
+}
+.details {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.clickVariants {
+  width: 552px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 57px 30px 61px;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-6xl);
+  max-width: 100%;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-heebo);
+}
+.frameWrapper,
+.tracksContainerParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.tracksContainerParent {
+  width: 1656px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  gap: var(--gap-50xl);
+}
+.frameWrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-5xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-josefin-sans);
+}
+.homeScreenDark,
+.topGroupParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.topGroupParent {
+  align-self: stretch;
+  align-items: flex-end;
+  gap: 37px;
+  max-width: 100%;
+}
+.homeScreenDark {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #4a0097, transparent);
+  overflow: hidden;
+  align-items: flex-start;
+  padding: 2px 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-50xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1275px) {
+  .artist1Parent {
+    gap: var(--gap-15xl);
+  }
+  .track1Parent {
+    flex-wrap: wrap;
+  }
+  .homeScreenDark {
+    gap: var(--gap-15xl);
+  }
+}
+@media screen and (max-width: 900px) {
+  .artistTitle {
+    font-size: var(--font-size-10xl);
+  }
+  .artist1Parent {
+    gap: var(--gap-mid);
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(155px, 269px));
+  }
+  .tracksTitle {
+    font-size: var(--font-size-10xl);
+  }
+  .track4Parent {
+    gap: 51px;
+  }
+  .frameParent {
+    gap: 22px;
+  }
+  .clickVariants {
+    padding-top: 37px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+  .tracksContainerParent {
+    gap: var(--gap-15xl);
+  }
+  .topGroupParent {
+    gap: 18px;
+  }
+  .homeScreenDark {
+    gap: var(--gap-mid);
+  }
+}
+@media screen and (max-width: 450px) {
+  .artistTitle {
+    font-size: var(--font-size-3xl);
+  }
+  .artist1Parent {
+    grid-template-columns: minmax(155px, 1fr);
+  }
+  .tracksTitle {
+    font-size: var(--font-size-3xl);
+  }
+  .track4Parent {
+    gap: var(--gap-6xl);
+  }
+  .details,
+  .titleAndArtistContainer {
+    font-size: var(--font-size-base);
+  }
+  .clickVariants {
+    padding-top: var(--padding-5xl);
+    padding-bottom: 26px;
+    box-sizing: border-box;
+  }
+  .tracksContainerParent {
+    gap: var(--gap-mid);
+  }
+}
+.nextSlideButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.nextSlideButton:hover {
+  background-color: #45a049;
+}
+
+.multilineText {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the boxes when clicked */
+.artistContainer:active {
+  animation: clickAnimation 0.3s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+.trackContainer:active {
+  animation: clickAnimation 0.3s ease-in-out;
+}
+
+.artistContainer:active,
+.trackContainer:active,
+.rectangleLayer:active {
+  animation: clickAnimation 0.3s ease-in-out;
+}

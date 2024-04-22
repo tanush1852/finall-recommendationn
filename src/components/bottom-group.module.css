@@ -1,0 +1,117 @@
+.rectangle {
+  align-self: stretch;
+  height: 114px;
+  position: relative;
+  background-color: var(--color-darkslategray);
+  display: none;
+}
+.expand,
+.indeedx,
+.options {
+  position: relative;
+  z-index: 1;
+}
+.indeedx {
+  align-self: stretch;
+  height: 1px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+}
+.expand,
+.options {
+  display: inline-block;
+  flex-shrink: 0;
+}
+.options {
+  width: 1313px;
+  white-space: pre-wrap;
+  max-width: 100%;
+}
+.expand {
+  width: 234px;
+  margin-left: -654px;
+}
+.optionsParent {
+  width: 1313px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.feedback {
+  position: relative;
+  display: inline-block;
+  min-width: 89px;
+  z-index: 2;
+  margin-left: -406px;
+}
+.frameGroup {
+  width: 1313px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.companyName {
+  position: relative;
+  z-index: 1;
+}
+.bottomGroup,
+.bottomGroupInner,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.bottomGroup,
+.bottomGroupInner {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-48xl) 0 var(--padding-51xl);
+  box-sizing: border-box;
+}
+.bottomGroup {
+  background-color: var(--color-darkslategray);
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 var(--padding-24xl);
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-heebo);
+}
+@media screen and (max-width: 1625px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .bottomGroupInner {
+    padding-left: var(--padding-16xl);
+    padding-right: var(--padding-14xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bottomGroup {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .companyName,
+  .expand,
+  .feedback,
+  .options {
+    font-size: var(--font-size-base);
+  }
+}
